@@ -6,6 +6,8 @@ import { FacebookModule } from 'ngx-facebook';
 
 import { AppComponent } from './app.component';
 
+import { BookService } from './shared/services/book.service';
+
 @NgModule({
     declarations: [
         AppComponent
@@ -16,7 +18,7 @@ import { AppComponent } from './app.component';
         FormsModule,
         HttpModule
     ],
-    providers: [],
+    providers: [ BookService ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule { }
