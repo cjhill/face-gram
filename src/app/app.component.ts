@@ -7,12 +7,11 @@ import { FacebookService, InitParams } from 'ngx-facebook';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    title = 'app works!';
-
+    
     constructor(private fb: FacebookService) {
         let fbParams: InitParams = {
             appId: '2058170937802677',
-            version: 'v1'
+            version: 'v2.8'
         };
 
         this.fb.init(fbParams);
